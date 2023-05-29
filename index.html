@@ -17,10 +17,10 @@
                 <div class="logo"></div>
                 <nav>
                     <ul>
-                        <li><a href="">Invisalign</a></li>
-                        <li><a href="">Beneficios</a></li>
-                        <li><a href="">Serve para mim?</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li class="selected"><span></span><a href="">Invisalign</a></li>
+                        <li><span></span><a href="">Beneficios</a></li>
+                        <li><span></span><a href="">Serve para mim?</a></li>
+                        <li><span></span><a href="">Contato</a></li>
                     </ul>
                 </nav>
                 <div class="telefone-header">
@@ -31,5 +31,11 @@
         </header>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $('nav a').hover(function(){
+            $('nav li').removeClass('selected');
+            $(this).parent().addClass('selected');
+        })
+    </script>
 </body>
 </html>
