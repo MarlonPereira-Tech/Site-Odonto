@@ -70,10 +70,159 @@ header nav ul li  span{
 div.telefone-header{
     float:left;
     position:relative;
-    top:-8px;
+    top:-3px;
 }
 div.telefone-header span{
-    font-size: 27px;
+    font-size: 22px;
     color:white;
     padding-left: 30px;
+}
+.content-header{
+    padding:60px 0;
+}
+.content-header .one{
+    float:left;
+    width:50%;
+}
+.content-header .one h2{
+    color:#509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+.content-header .one p,.content-header .one span{
+    padding:10px 0;
+    font-size: 15px;
+}
+.content-header .one form input{
+    display:inline-block;
+    
+}
+.content-header .one form input[type=email]{
+    margin:10px 0;
+    width:251px;
+    height: 40px;
+    border:2px solid #ccc;
+    border-radius: 80px;
+    padding-left: 15px;
+}
+.content-header .one form input[type=email]:focus{
+    outline: 0;
+}
+.content-header .one form input[type=submit]{
+    margin: 10px 0;
+    color:white;
+    background-color: #0daaaa;
+    cursor:pointer;
+    border:0;
+    padding:10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    height: 40px;
+
+}
+.content-header .one span{
+    display: inline-block;
+    color:#509d87;
+    margin-top: 20px;
+    font-size: 13px;
+}
+.content-header .two{
+    float:left;
+    width:50%;
+    padding: 0 30px;
+}
+.content-header .two img{
+    float:left;
+    width: 50%;
+    border:10px solid rgba(0,0,0,0)
+}
+
+/*----diferenciais------*/
+
+section.diferenciais{
+    padding:40px 0;
+}
+section.diferenciais > .container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.diferencial-single{
+    width:33.0%;
+    margin-bottom: 30px;
+    
+}
+.diferencial-single img{
+    max-width: 100%;
+}
+.diferencial-single h2{
+    color:black;
+    margin: 20px 0;
+}
+.diferencial-single h2 > b{
+    color:#7dd5b0
+}
+.diferencial-single p{
+    color:#2d2d2d;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sobre-container{
+    float:left;
+    width:50%;
+}
+.sobre > .container{
+    max-width: 1440px;
+}
+.sobre-container img{
+    width:100%;
+}
+.padsobre{
+    padding:10px 40px;
+}
+.sobre-container h2{
+   font-size: 33px;
+   font-weight: normal;
+   margin:10px 0;
+   color:#a9c4b2;
+}
+.sobre-container p{
+    color:black;
+    font-size: 15px;
+}
+.sobre-container h2 > b{
+    color:#0daaaa;
+}
+
+
+
+
+/*-----------media queries-----------*/
+@media screen and (max-width: 900px){
+    .content-header .two{
+        display:none;
+    }
+    nav.desktop{
+        display: none;
+    }
+    .telefone-header{
+        display: none;
+    }
+    .content-header .one{
+        text-align: center;
+        width:100%
+    }
+    section.header-master{
+        min-height: 400px;
+
+    }
+    .diferencial-single{
+        width:100%;
+        text-align: center;
+    }
+    .sobre-container{
+        width: 100%;
+    }
+    .padsobre{
+        padding:0;
+    }
 }
