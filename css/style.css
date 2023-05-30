@@ -192,6 +192,22 @@ section.diferenciais > .container{
 .sobre-container h2 > b{
     color:#0daaaa;
 }
+section.depoimento{
+    padding-top: 200px;
+    padding-bottom: 300px;
+    width:100%;
+    background-image: url('../images/bg_02.png');
+    background-size: cover;
+    text-align: center;
+}
+section.depoimento h2{
+    font-weight: normal;
+    font-size: 29px;
+    color:#2d2d2d;
+}
+section.depoimento p{
+    font-size: 15x;
+}
 
 
 
